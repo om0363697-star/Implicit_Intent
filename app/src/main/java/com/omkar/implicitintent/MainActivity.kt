@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
 
         mapButton.setOnClickListener {
             val intent= Intent(Intent.ACTION_VIEW)
-            intent.data= Uri.parse("https://www.openstreetmap.org/#map=4/21.84/82.79")
+            intent.data= Uri.parse("https://www.google.com/maps/@19.8738739,75.3914901,14z?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D")
+            startActivity(intent)
 
         }
     }
