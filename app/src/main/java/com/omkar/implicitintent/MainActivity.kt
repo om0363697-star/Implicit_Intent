@@ -17,16 +17,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
       val webButton= findViewById<CardView>(R.id.carweb)
         val cameraButton= findViewById<CardView>(R.id.cardcamera)
+        val mapButton= findViewById<Button>(R.id.btn2)
 
         webButton.setOnClickListener {
             val intent= Intent(Intent.ACTION_VIEW)
-            intent.data= Uri.parse("https://thatsthem.com/people-search")
+            intent.data= Uri.parse("https://netmirror.global/")
             startActivity(intent)
 
         }
         cameraButton.setOnClickListener {
             val intent= Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivity(intent)
+
+        }
+
+        mapButton.setOnClickListener {
+            val intent= Intent(Intent.ACTION_VIEW)
+            intent.data= Uri.parse("https://www.openstreetmap.org/#map=4/21.84/82.79")
 
         }
     }

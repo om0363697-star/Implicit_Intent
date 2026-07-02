@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/img1"
+    android:background="@drawable/img2"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -46,5 +46,13 @@
             android:gravity="center"
             android:textStyle="bold"/>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"
+        android:layout_height="wrap_content"
+        android:text="map" />
 
 </LinearLayout>
